@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra boda</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="stylesheet" href="modal.css"> 
+    <!-- Listado de css con version dinamica segun modificacion de archivo -->
+<link rel='stylesheet' href='assets/css/bootstrap.min.css'/><link rel='stylesheet' href='assets/css/jquery.classycountdown.css'/><link rel='stylesheet' href='assets/css/jquery.fancybox.min.css'/>
+<!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/wedding-ring.png" type="image/png">
+
+
+
+</head>
+<body>
+
+    <section class="audio">
+        <div class="container">
+            <div class="row">
+                <div class="botonAudio-container">
+                    <audio id="audioPrueba" loop>
+                        <source src="musica.mp3" type="audio/mp3">
+                        ¡Ups! Tu navegador no soporta este archivo de audio.
+                    </audio>
+                    <div class='animation'>
+                        <img id="btnPlay" src="play.svg" alt="boton play" onclick="playAudio()"
+                            class="botonAudio vertical_shake">
+    
+                        <img id="btnPausa" src="pause.svg" class="botonAudio hidden"
+                            onclick="pauseAudio()" alt="boton pausa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="texto">
+        <img src="img/texto.png" alt="Texto Imagen"> 
+        <a href="#nuestraboda-img">
+          <div class="scroll-down"></div>
+      </a>
+    </div>
+    
+
+   
+
+
+
+
+
+</section>
+
+
+</section>
+
+<section class="nuestraboda">
+
+<div class="container div_nuestraBoda">
+
+<br>
+    <h4>NUESTRA BODA</h4>
+
+
+    
+</div>
+
+<!-- Cuenta Regresiva -->
+<section class="cuenta-regresiva" id="nuestraboda-img">
+
+  <div class="container">
+  
+  
+  <!-- Contenedor de cuenta regresiva -->
+  <div class="reloj">
+    <div class="countdown"></div>
+  </div>
+  
+  </div>
+  
+
+</div>
+
+<img src="assets/img/icono-nuestraboda.svg" alt="" class="icon">
+
+<!-- Ceremonia y Fiesta -->
+<section class="ceremonia-fiesta">
+
+    <style>
+      section.ceremonia-fiesta h2 {
+        color: #89CFF0; 
+      }
+    </style>
+    
+    <div class="container">
+      <div class="row">
+        <!-- Ceremonia -->
+        <div class="col-md-6 columna ceremonia animated">
+          <h2>Ceremonia</h2>
+          <p>
+            18 de Noviembre de 2024<br>
+            6:00 P.M<br>
+            Parroquia Santa Bárbara,<br>
+            La Torre, La Vega.
+          </p>
+          <a target="_blank" href="https://www.google.com/maps/place/Parroquia+Santa+B%C3%A1rbara/@19.3426094,-70.6250381,2007m/data=!3m1!1e3!4m6!3m5!1s0x8eb1d3b0b11e560b:0xbe4b1f143ab43f74!8m2!3d19.3433861!4d-70.6187338!16s%2Fg%2F11jdmrp08p?entry=ttu&g_ep=EgoyMDI0MDgyMS4wIKXMDSoASAFQAw%3D%3D" class="btn">Cómo llegar</a>
+        </div>
+  
+        <br>
+        <br>
+        <br>
+  
+        <!-- Fiesta -->
+        <div class="col-md-6 columna fiesta animated">
+          <h2>Festejo</h2>
+          <p>
+            18 de Noviembre de 2024<br>
+            7:30 P.M<br>
+            Los Peladeros, La Vega.
+          </p>
+          <a target="_blank" href="https://www.google.com/maps/dir//19.3377827,-70.6371871/@19.3377596,-70.6381819,341m/data=!3m1!1e3!4m2!4m1!3e0?entry=ttu" class="btn">Cómo llegar</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+
+    
+
+  
+</div>
+</div>
+</section>
+
+<section class="seccion-flores">
+  <img src="Flores90.png" alt="Flores decorativas">
+</section>
+
+ <!-- RSVP -->
+ <section class="confirmar-asistencia">
+  <div class="containter">
+
+
+    
+      <div class="rsvp"><h4 class="rsvp">RSVP</h4></div>
+      <div class="div_rsvp animated">
+          <p>Esperamos que puedas acompañarnos. ¡Confirmanos tu asistencia!</p>
+          <a href="#" class="btn" data-toggle="modal" data-target="#modalConfirmarAsistencia">Confirmar asistencia</a>
+      </div>
+
+
+
+      <!-- Modal para confirmar asistencia -->
+<div class="modal fade" id="modalConfirmarAsistencia" tabindex="-1" role="dialog" aria-labelledby="modalConfirmarAsistenciaLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalConfirmarAsistenciaLabel" style="text-align: center; font-family: 'Libre Baskerville', serif;">Confirmación de asistencia</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="formConfirmarAsistencia" action="https://formspree.io/f/manwlleo" method="POST">
+          <div class="form-group">
+            <label for="nombreCompleto">Nombre y Apellido</label>
+            <input type="text" class="form-control" id="nombreCompleto" name="nombreCompleto" required>
+          </div>
+          <div class="form-group">
+            <label for="asistencia">Asistencia</label>
+            <select class="form-control" id="asistencia" name="asistencia" required>
+              <option value="Si, confirmo">Sí, confirmo</option>
+              <option value="No podré asistir">No podré asistir</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="nombreAcompanante">Nombre y Apellido del Acompañante</label>
+            <input type="text" class="form-control" id="nombreAcompanante" name="nombreAcompanante">
+          </div>
+          <div class="form-group">
+            <label for="mensaje">¿Quieres dejar un mensaje a los novios?</label>
+            <textarea class="form-control" id="mensaje" name="mensaje" rows="3"></textarea>
+          </div>
+          <button type="submit" class="btn btn-verde-pastel">Enviar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-gris" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+      <img src="assets/img/icono-calendar.svg" alt="" class="icon calendario">
+      <div class="div_calendario  animated">
+          <p>¡Agenda la fecha en tu calendario!</p>
+          <div class="dropdown">
+              <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Agendar evento
+              </a>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                  <a target="_blank" id="LinkCalendarGoogle" class="dropdown-item" href="#"><img
+                          src="assets/img/icons8-calendario-de-google.svg" class="iconLink mr-3"
+                          alt="icono google">Google</a>
+                  
+                  <a target="_blank" id="LinkCalendarApple" class="dropdown-item" href="#"><img
+                          src="assets/img/icons8-mac-os.svg" class="iconLink mr-3" alt="icono google">Apple</a>
+                 
+              </div>
+          </div>
+      </div>
+      </br>
+      <img src="assets/img/icono-dresscode.svg" alt="" class="icon dresscode">
+<img class="div_dresscode animated">
+
+      <div class="div_drescode">
+
+          <h4 class="dresscode">Dress Code:</h4>
+
+          <p class="text_drescode animated">
+              Formal elegante.</br>No rojo y blanco        </p>
+
+  </div>
+  </div>
+
+</section>
+
+<section class="seccion-flores1">
+  <img src="Flores180.png" alt="Flores decorativas">
+</section>
+
+
+<!-- Galeria -->
+<section class="galeria">
+  <div class="container">
+
+    <h4 class="title_nosotros">NOSOTROS</br>♥</h4>
+    <p class="sub_title_nosotros animated">Cada historia de amor es diferente, ¡pero la nuestra es única!</p>
+    <div class="row div_fotos_nosotros ">
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+
+      
+        <!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+<!-- Impmrimo el bloque con la imagen -->
+<div class="col-6 col-md-3 item-galeria">
+  <a href="boda.png" data-fancybox="images" data-caption="">
+    <img class="img-fluid" src="boda.png" alt="">
+  </a>
+</div>
+
+      
+      
+
+    </div>
+  </div>
+</section>
+    <!-- CBU -->
+    
+   <section class="cbu">
+      <div class="container">
+         <img src="assets/img/icono-regalo.svg" alt="" class="icon globo">
+         <div class="div_cbu animated">
+            <p>¡El mejor regalo es tu presencia!</br>
+               Si deseas realizarnos un regalo...</p>
+            <a data-fancybox data-src="#hidden-cbu" href="javascript:;" data-options='{"touch" : false}'
+               class="btn btn-alt">Ver más</a>
+         </div>
+      </div>
+
+      <!-- Datos Cbu -->
+      <div style="display: none;" id="hidden-cbu">
+
+         
+
+<span class="title">Datos Bancarios</span>
+
+<ul>
+  <li>Nombre del Titular: José Francisco Cepeda Lora</li>
+  <li>N° de Cuenta: 9603082893</li>
+  <li>Tipo de cuenta: Cuenta de Ahorros</li>
+  <li>Cédula de Identidad: 40219428667</li>
+  <li>Banco: Banco de Reservas</li>
+</ul>
+
+      </div>
+
+
+   </section>
+
+
+<!-- Canciones -->
+<section class="canciones parallax-canciones d-flex justify-content-center align-items-center">
+  <div class="container d-flex justify-content-center align-items-center div_musica">
+    <div class="canciones-inner">
+      <h4 class="fiestaa">¡FIESTA!</h4>
+      <p>¿Qué canciones no pueden faltar en la fiesta?</br>
+      ¡Queremos crear una lista inolvidable!</p>
+      <a href="#" class="btn" data-toggle="modal" data-target="#modalSugerirCancion">Sugerir canción</a>
+    </div>
+  </div>
+</section>
+
+<!-- Modal para sugerir canción -->
+<div class="modal fade" id="modalSugerirCancion" tabindex="-1" role="dialog" aria-labelledby="modalSugerirCancionLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalSugerirCancionLabel">Sugerir Canción</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form id="formSugerirCancion" action="https://formspree.io/f/mwpewrrv" method="POST">
+          <div class="form-group">
+            <label for="nombre">Escriba su nombre:</label>
+            <input type="text" class="form-control" id="nombre" name="nombre" required>
+          </div>
+          <div class="form-group">
+            <label for="cancion">Escriba el nombre de la canción:</label>
+            <input type="text" class="form-control" id="cancion" name="cancion" required>
+          </div>
+          <div class="form-group">
+            <label for="interprete">Escriba el nombre del intérprete:</label>
+            <input type="text" class="form-control" id="interprete" name="interprete" required>
+          </div>
+          <button type="submit" class="btn" style="background-color: #89CFF0; color: white; border: 1px solid #89CFF0;">Enviar</button>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn" style="background-color: #333; color: white; border: 1px solid #333;" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="seccion-flores2">
+  <img src="Floresplano.png" alt="Flores decorativas">
+</section>
+
+
+
+<!-- Gracias -->
+<section class="gracias">
+
+  <div class="container">
+
+    <p class="text_gracias">♥<br>¡Gracias por acompañarnos en este momento tan importante!</p>
+
+  </div>
+
+</section>
+   
+
+
+
+
+
+    
+<script type='text/javascript' src='assets/js/jquery-3.5.1.slim.min.js'></script><script type='text/javascript' src='assets/js/jquery.knob.js'></script><script type='text/javascript' src='assets/js/jquery.throttle.js'></script><script type='text/javascript' src='assets/js/jquery.classycountdown.js'></script><script type='text/javascript' src='assets/js/popper.min.js?v=1702488275'></script><script type='text/javascript' src='assets/js/bootstrap.min.js?v=1702488272'></script><script type='text/javascript' src='assets/js/parallax.min.js'></script><script type='text/javascript' src='assets/js/jquery.fancybox.min.js'></script>
+
+<script src="script.js"></script> 
+
+
+</body>
+</html>
+

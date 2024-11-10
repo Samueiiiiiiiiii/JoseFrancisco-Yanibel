@@ -1,0 +1,207 @@
+/* Estilos para el modal */
+.modal-content {
+    text-align: center; /* Centra el texto dentro del modal */
+  }
+  
+  .modal-header .modal-title {
+    font-size: 1.5rem; /* Ajusta el tamaño del título del modal si es necesario */
+  }
+  
+  .modal-body {
+    padding: 20px; /* Ajusta el padding según tus necesidades */
+  }
+  
+  /* Estilo para el botón de enviar */
+  .modal-footer .btn-primary {
+    background-color: #89CFF0; /* Verde pastel */
+    border: 1px solid #89CFF0; /* Borde del mismo color */
+    color: white; /* Texto blanco */
+  }
+  
+  .modal-footer .btn-primary:hover {
+    background-color: #c6edff; /* Verde casi blanco al hacer hover */
+    border: 1px solid #c6edff; /* Borde del mismo color que el fondo al hacer hover */
+  }
+  
+  /* Estilo para el botón de cerrar */
+  .modal-footer .btn-secondary {
+    background-color: #333; /* Negro gris */
+    border: 1px solid #333; /* Borde del mismo color */
+    color: white; /* Texto blanco */
+  }
+  
+  .modal-footer .btn-secondary:hover {
+    background-color: #555; /* Gris oscuro al hacer hover */
+    border: 1px solid #555; /* Borde del mismo color al hacer hover */
+  }
+  
+
+
+  /* Botón verde pastel para enviar */
+.btn-verde-pastel {
+  background-color: #89CFF0 !important;
+  color: white !important;
+  border: 1px solid #89CFF0 !important;
+}
+
+/* Hover para el botón verde pastel */
+.btn-verde-pastel:hover {
+  background-color: #c6edff !important;
+  border-color: #c6edff !important;
+  color: white !important;
+}
+
+/* Botón gris para cerrar */
+.btn-gris {
+  background-color: #333 !important;
+  color: white !important;
+  border: 1px solid #333 !important;
+}
+
+/* Hover para el botón gris */
+.btn-gris:hover {
+  background-color: #787878 !important;
+  border-color: #9a9a9a !important;
+  color: white !important;
+}
+
+/* Para oscurecer el fondo cuando el modal esté activo */
+.modal-backdrop.show {
+  opacity: 0.5 !important;
+}
+
+/* Estilos para la sección de flores */
+/* Estilos para la sección de flores */
+.seccion-flores {
+  text-align: left; /* Alinea el contenido de la sección a la izquierda */
+  margin: 20px 0; /* Ajusta el espacio entre las secciones */
+  position: relative; /* Hacemos que el section sea un contenedor posicionado */
+  z-index: 2; /* Aseguramos que esta sección esté sobre las demás secciones */
+  margin-bottom: -100px; /* Ajusta el espacio entre las secciones, para que se superpongan */
+}
+
+/* Estilos para la imagen dentro de la sección de flores */
+.seccion-flores img {
+  width: 50%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: absolute; /* Posicionamos la imagen de forma absoluta dentro de la sección */
+  top: -160px; /* La ponemos más cerca de la parte superior de la sección */
+  left: -50px; /* Alineamos la imagen a la izquierda */
+  z-index: 1; /* Hacemos que la imagen esté sobre el contenido dentro de la sección */
+  opacity: 0.8; /* Opcional: Transparencia para un efecto sutil */
+}
+/* Estilos para la sección de flores1 */
+/* Estilos para la sección de flores1 */
+.seccion-flores1 {
+  text-align: right; /* Alinea el contenido de la sección a la derecha */
+  margin: 20px 0; /* Ajusta el espacio entre las secciones */
+  position: relative; /* Hacemos que el section sea un contenedor posicionado */
+  z-index: 2; /* Aseguramos que esta sección esté sobre las demás secciones */
+  margin-bottom: -100px; /* Ajusta el espacio entre las secciones, para que se superpongan */
+}
+
+/* Estilos para la imagen dentro de la sección de flores1 */
+.seccion-flores1 img {
+  width: 45%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: absolute; /* Posicionamos la imagen de forma absoluta dentro de la sección */
+  top: -270px; /* La ponemos más cerca de la parte superior de la sección */
+  z-index: 1; /* Hacemos que la imagen esté sobre el contenido dentro de la sección */
+  opacity: 0.8; /* Opcional: Transparencia para un efecto sutil */
+  right: 0; /* Alinea la imagen al borde derecho de la sección */
+}
+
+.seccion-flores2 {
+  text-align: right; /* Alinea el contenido de la sección a la derecha */
+  margin: 20px 0; /* Ajusta el espacio entre las secciones */
+  position: relative; /* Hacemos que el section sea un contenedor posicionado */
+  z-index: 2; /* Aseguramos que esta sección esté sobre las demás secciones */
+  margin-bottom: -100px; /* Ajusta el espacio entre las secciones, para que se superpongan */
+}
+
+/* Estilos para la imagen dentro de la sección de flores2 */
+.seccion-flores2 img {
+  width: 50%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: absolute; /* Posicionamos la imagen de forma absoluta dentro de la sección */
+  top: -230px; /* La ponemos más cerca de la parte superior de la sección */
+  z-index: 1; /* Hacemos que la imagen esté sobre el contenido dentro de la sección */
+  opacity: 0.8; /* Opcional: Transparencia para un efecto sutil */
+  transform: translateX(250px); /* Mueve la imagen hacia la derecha sin afectar el flujo */
+}
+
+/* Estilos para la sección de flores2 */
+.seccion-flores2 {
+  text-align: center; /* Alinea el contenido de la sección al centro */
+  margin: 20px 0; /* Ajusta el espacio entre las secciones */
+  position: relative; /* Hacemos que el section sea un contenedor posicionado */
+  z-index: 2; /* Aseguramos que esta sección esté sobre las demás secciones */
+  margin-bottom: -100px; /* Ajusta el espacio entre las secciones, para que se superpongan */
+}
+
+/* Estilos para la imagen dentro de la sección de flores2 */
+.seccion-flores2 img {
+  width: 50%; /* Ajusta el tamaño de la imagen al 50% del contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  position: absolute; /* Posicionamos la imagen de forma absoluta dentro de la sección */
+  top: -180px; /* La ponemos más cerca de la parte superior de la sección */
+  left: 50%; /* La centramos horizontalmente en el contenedor */
+  transform: translateX(-50%); /* Ajusta la imagen para que se centre completamente */
+  z-index: 1; /* Hacemos que la imagen esté sobre el contenido dentro de la sección */
+  opacity: 0.8; /* Opcional: Transparencia para un efecto sutil */
+}
+
+/* Efecto de fade */
+.seccion-flores, .seccion-flores1, .seccion-flores2 {
+  opacity: 0;  /* Inicialmente no visibles */
+  transition: opacity 1s ease-in-out; /* Transición para el efecto de fade */
+}
+
+.seccion-flores.in, .seccion-flores1.in, .seccion-flores2.in {
+  opacity: 1; /* Hacer visibles cuando se agrega la clase "in" */
+}
+
+
+/* Media query para pantallas grandes (PC) */
+@media (min-width: 1024px) {
+  .seccion-flores2 img {
+    display: none; /* Oculta la imagen en pantallas grandes */
+  }
+}
+
+/* Media query para pantallas pequeñas (celulares) */
+@media (max-width: 1023px) {
+  .seccion-flores2 img {
+    display: block; /* Muestra la imagen en pantallas pequeñas */
+  }
+}
+
+
+/* Medias Query para ocultar la imagen en pantallas de escritorio (PC) */
+@media (min-width: 1024px) {
+  .seccion-flores1 img {
+    display: none; /* Ocultamos la imagen en pantallas de escritorio */
+  }
+}
+
+/* Medias Query para mostrar la imagen solo en pantallas móviles */
+@media (max-width: 768px) {
+  .seccion-flores1 img {
+    display: block; /* Asegura que la imagen se muestre en dispositivos móviles */
+  }
+}
+
+
+/* Medias Query para ocultar la imagen en pantallas de escritorio (PC) */
+@media (min-width: 1024px) {
+  .seccion-flores img {
+    display: none; /* Ocultamos la imagen en pantallas de escritorio */
+  }
+}
+
+/* Medias Query para mostrar la imagen solo en pantallas móviles */
+@media (max-width: 768px) {
+  .seccion-flores img {
+    display: block; /* Asegura que la imagen se muestre en dispositivos móviles */
+  }
+}
